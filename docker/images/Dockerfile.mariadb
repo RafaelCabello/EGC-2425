@@ -3,3 +3,7 @@ FROM mariadb:11.2
 RUN apt-get update && \
     apt-get install -y mariadb-client && \
     rm -rf /var/lib/apt/lists/*
+
+RUN apt-get install -y iputils-ping && \
+apt-get -y install net-tools
+

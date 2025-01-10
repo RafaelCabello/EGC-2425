@@ -53,8 +53,7 @@ jobs:
   
   dependecies:
     runs-on: ubuntu-latest
-
-      steps:
+    steps:
       - uses: actions/checkout@v4
 
       - name: Check for outdated dependencies
